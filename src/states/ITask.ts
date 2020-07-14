@@ -7,4 +7,6 @@ export interface ITask {
 
 export interface ITaskList {
   tasks: ITask[];
+  loading: boolean;
+  failedMessage: string;
 }

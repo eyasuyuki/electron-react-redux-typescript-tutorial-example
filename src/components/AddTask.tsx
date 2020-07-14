@@ -4,7 +4,7 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { useDispatch } from 'react-redux';
 import styled from 'styled-components';
-import { addTaskAction } from '../actions/TaskActions';
+import { addTask } from '../actions/TaskActions';
 
 const Container = styled.div`
   align-items: center;
@@ -52,13 +52,14 @@ const AddTask: React.FC = () => {
     [deadline, taskName],
   );
   const onClickAddButton = useCallback(() => {
-    dispatch(
-      addTaskAction({
+    addTask(
+      {
         complete: false,
         deadline,
         taskName,
         id: '',
-      }),
+      },
+      dispatch,
     );
   }, [deadline, taskName]);
   return (

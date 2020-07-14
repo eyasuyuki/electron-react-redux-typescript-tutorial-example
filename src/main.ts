@@ -1,6 +1,5 @@
 import { app, BrowserWindow } from 'electron';
 import path from 'path';
-
 // セキュアな Electron の構成
 // 参考: https://qiita.com/pochman/items/64b34e9827866664d436
 
@@ -10,9 +9,10 @@ const createWindow = (): void => {
     width: 1200,
     height: 600,
     webPreferences: {
-      nodeIntegration: false,
-      nodeIntegrationInWorker: false,
+      // nodeIntegration: true,
+      // nodeIntegrationInWorker: true,
       contextIsolation: true,
+      preload: path.join(__dirname, './core/preload.js'), // dist/core/preload.js
     },
   });
 
