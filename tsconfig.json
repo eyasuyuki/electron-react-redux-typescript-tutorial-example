@@ -68,6 +68,6 @@
   },
     "files": [
 	  "src/main.ts",
-      //"src/core/preload.ts"
+      "src/core/preload.ts"
     ]
 }
