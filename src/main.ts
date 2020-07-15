@@ -9,8 +9,8 @@ const createWindow = (): void => {
     width: 1200,
     height: 600,
     webPreferences: {
-      // nodeIntegration: true,
-      // nodeIntegrationInWorker: true,
+      nodeIntegration: false,
+      nodeIntegrationInWorker: false,
       contextIsolation: true,
       preload: path.join(__dirname, './core/preload.js'), // dist/core/preload.js
     },

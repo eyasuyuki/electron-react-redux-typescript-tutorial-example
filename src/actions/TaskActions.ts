@@ -1,6 +1,5 @@
 import { Dispatch } from 'redux';
 import '../core/ICore';
-import '../core/core';
 import { actionCreatorFactory } from 'typescript-fsa';
 import { ITask } from '../states/ITask';
 
