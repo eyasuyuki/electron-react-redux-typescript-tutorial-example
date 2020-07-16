@@ -29,7 +29,7 @@ const testTaskList: ITask[] = [
 describe('__private__', () => {
   test('reviver', () => {
     const key1 = 'deadline';
-    const value = '2020-04-25T01:02:08.000Z';
+    const value = '2020-04-25T01:02:00.000Z';
     const result1 = __private__.reviver(key1, value);
     expect(result1).toEqual(new Date(2020, 3, 25, 10, 2, 0));
     const key2 = 'other';
