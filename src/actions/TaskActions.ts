@@ -6,7 +6,7 @@ import { ITask } from '../states/ITask';
 const actionCreator = actionCreatorFactory('task-actions');
 
 export const showTaskListAction = actionCreator.async<null, ITask[], string>(
-  'shwo-task-list',
+  'show-task-list',
 );
 
 export const addTaskAction = actionCreator<ITask>('add');
