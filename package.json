@@ -64,7 +64,7 @@
   },
   "scripts": {
     "build": "webpack",
-    "start": "electron ./ --debug",
+    "start": "electron ./dist/main.js --debug",
     "package:mac": "webpack && electron-builder --mac --x64",
     "package:windows": "webpack && electron-builder --win --x64",
     "package:linux": "webpack && electron-builder --linux --x64",
