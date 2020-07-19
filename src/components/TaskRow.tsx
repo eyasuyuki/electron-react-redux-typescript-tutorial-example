@@ -92,7 +92,9 @@ const TaskRow: React.FC<{ data: ITask }> = (props) => {
         <TaskName>{data.taskName}</TaskName>
         <Deadline>⏰{deadlineString}</Deadline>
       </TaskBody>
-      <TaskRemove className="deleteButton" onClick={onDeleteClick}>❌</TaskRemove>
+      <TaskRemove className="deleteButton" onClick={onDeleteClick}>
+        ❌
+      </TaskRemove>
     </Task>
   );
 };
